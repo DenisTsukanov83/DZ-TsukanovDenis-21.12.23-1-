@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Calculator';
+    src:  url('fonts/Calculator.woff') format('woff'),
+        url('fonts/Calculator.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+
+h1 {
+    width: max-content;
+    margin: auto;
+}
+
+h2 {
+    width: max-content;
+    margin: auto;
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.count {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 83%;
+    height: 400px;
+    padding-top: 100px;
+}
+
+.item {
+    background-color: rgb(223, 222, 222);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.del {
+    width: 50%;
+    height: 200px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(131, 131, 210, 0.8);
+    margin-left: 45%;
+}
+
+.del>div:nth-child(2) {
+    width: 5%;
+    cursor: pointer;
+}
+
+.del>div:nth-child(2) img {
+    width:100%;
+    height: max-content;
+}
+
+.del-wrap {
+    margin: auto;
+    width: max-content;
+    gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.time {
+    background-color: rgb(105, 105, 144);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.time-num, .colon {
+    font-family: Calculator;
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.time-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    top: 100px;
+    left: calc(50% - 250px);
+    width: 550px;
+    height: 450px;
+    background-color: rgb(157, 157, 219);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 70px;
+    
+
+}
+
+.inputs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.inputs>input {
+    width: 100%;
+    height: 50px;
+}
+
+.modal>button {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 500px;
+    cursor: pointer;
+}
+
+.close img{
+    width: 100%;
+    height: 100%;
+}
+
+.add {
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    background-color: rgb(157, 157, 219);
+    font-size: 24pt;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+.curtain {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(95, 91, 91, 0.9);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.curtain h2 {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 36pt;
+}
+
+.curtain .trash {
+    width: 50px;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+
+}
+
+.curtain .trash img {
+    width: 100%;
+}
